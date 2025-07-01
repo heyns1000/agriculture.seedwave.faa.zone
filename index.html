@@ -999,7 +999,7 @@
     </main>
 
     <!-- Custom Modal for Alerts -->
-    <div id="customModal" class="fixed inset-0 bg-black bg-opacity75 flex items-center justify-center p-4 z-50 hidden">
+    <div id="customModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
         <div class="bg-agri-card-bg text-agri-text-light p-6 rounded-lg shadow-xl text-center max-w-sm custom-modal-content">
             <p id="customModalMessage"></p>
             <button onclick="window.hideCustomModal()" class="form-action-button bg-agri-primary-color hover:bg-agri-success-green">Close</button>
@@ -1127,80 +1127,82 @@
                     { name: "GrowNode", subnodes: ["PlantID", "BioMonitor", "GrowthTrack"] },
                     { name: "GrainCast", subnodes: ["MarketSignal", "FutureHarvest", "StorageOpt"] },
                     { name: "SoilBank", subnodes: ["CarbonSeq", "Microbiome", "ErosionGuard"] },
-                    { name: "AgriVault", subnodes: ["RecordSafe", "AuditTrail", "ComplianceLog"] },
-                    { name: "PulseHarvest", subnodes: ["DroneHarvester", "YieldMap", "AutoPick"] },
-                    { name: "MarketSoil", subnodes: ["PricingPulse", "SupplyDemand", "TradeFlow"] },
-                    { name: "DroneFarm", subnodes: ["DroneSurvey", "SprayBot", "PrecisionPlant"] },
-                    { name: "RuralOps", subnodes: ["FarmFleet", "LaborTrack", "AssetManage"] },
-                    { name: "SeedGrid", subnodes: ["SeedTrace", "VarietySelect", "GerminationLab"] },
-                    { name: "FarmChain", subnodes: ["ProdTrace", "SupplyChainVis", "CertVerify"] },
-                    { name: "AgriScore", subnodes: ["HealthIndex", "RiskAssess", "SustainabilityScore"] },
-                    { name: "SoilNet", subnodes: ["SoilSensorNet", "MoistureMap", "NutrientMonitor"] },
-                    { name: "CropDoc", subnodes: ["PestID", "DiseaseDetect", "NutrientDeficiency"] },
-                    { name: "TerraVault", subnodes: ["LandRegistry", "LeaseTrack", "WaterRights"] },
-                    { name: "AgriID", subnodes: ["FarmerID", "ProduceID", "OriginTrace"] },
-                    { name: "SproutFlow", subnodes: ["SeedlingTrack", "GrowthPhase", "TransplantAid"] },
-                    { name: "GrainSafe", subnodes: ["StorageMonitor", "PurityCheck", "PestGuard"] },
-                    { name: "FieldSync", subnodes: ["EquipmentSync", "AutomatedFarm", "SmartIrrigate"] },
-                    { name: "AgriDepot", subnodes: ["SupplyChainOpt", "WarehouseFlow", "LogisticsHub"] },
-                    { name: "DroneCrop", subnodes: ["CropHealthScan", "IrrigationMonitor", "YieldEstimate"] },
-                    { name: "CropTrace", subnodes: ["FarmToTableTrace", "BatchTrack", "QualityAssure"] },
-                    { name: "PulseSoil", subnodes: ["SoilCompaction", "DrainageAnalysis", "ErosionRisk"] },
-                    { name: "SeedRoot", subnodes: ["GeneTrace", "HybridOptimize", "VarietyManage"] },
-                    { name: "RuralFlow", subnodes: ["RuralConnect", "CommunityTrade", "LocalMarket"] },
-                    { name: "MarketGrow", subnodes: ["DemandForecaster", "PriceOptimizer", "MarketInsight"] },
-                    { name: "AgriRank", subnodes: ["FarmPerfRank", "YieldLeaderboard", "SustainabilityRank"] },
-                    { name: "GreenTrace", subnodes: ["CarbonFootprint", "WaterUsageTrack", "EcoCertify"] },
-                    { name: "CropVault", subnodes: ["HarvestLog", "YieldRecords", "StorageVault"] },
-                    { name: "AgriCast", subnodes: ["WeatherPredict", "ClimateAdapt", "SeasonalForecast"] },
-                    { name: "TerraPulse", subnodes: ["SoilMoisture", "TemperatureMonitor", "Microclimate"] },
-                    { name: "SoilTrace", subnodes: ["NutrientTrace", "ContaminantDetect", "HistoryLog"] },
+                    { name: "CropID", subnodes: ["CropID Scanner™", "CropID Trust™"] },
+                    { name: "AgriVault", subnodes: ["AgriVault Lock™", "AgriVault Chain™", "AgriVault Seed™"] },
+                    { name: "PulseHarvest", subnodes: ["PulseHarvest Sync™", "PulseHarvest Drop™", "PulseHarvest Vault™"] },
+                    { name: "MarketSoil", subnodes: ["MarketSoil Rate™", "MarketSoil Feed™", "MarketSoil UI™"] },
+                    { name: "DroneFarm", subnodes: ["DroneFarm View™", "DroneFarm Grid™", "DroneFarm Trace™"] },
+                    { name: "RuralOps", subnodes: ["RuralOps Node™", "RuralOps Pulse™", "RuralOps Chain™"] },
+                    { name: "SeedGrid", subnodes: ["SeedGrid Vault™", "SeedGrid Scan™", "SeedGrid Growth™"] },
+                    { name: "FarmChain", subnodes: ["FarmChain Link™", "FarmChain Claim™", "FarmChain Credit™"] },
+                    { name: "AgriScore", subnodes: ["AgriScore Index™", "AgriScore Node™"] },
+                    { name: "SoilNet", subnodes: ["SoilNet Base™", "SoilNet UI™"] },
+                    { name: "CropDoc", subnodes: ["CropDoc Scan™", "CropDoc Aid™"] },
+                    { name: "TerraVault", subnodes: ["TerraVault Ledger™", "TerraVault View™", "TerraVault Chain™"] },
+                    { name: "AgriID", subnodes: ["AgriID Chain™", "AgriID Badge™", "AgriID Verify™"] },
+                    { name: "SproutFlow", subnodes: ["SproutFlow Loop™", "SproutFlow Track™"] },
+                    { name: "GrainSafe", subnodes: ["GrainSafe Lock™", "GrainSafe Audit™"] },
+                    { name: "FieldSync", subnodes: ["FieldSync Signal™", "FieldSync Grid™"] },
+                    { name: "AgriDepot", subnodes: ["AgriDepot Map™", "AgriDepot Sync™", "AgriDepot Drop™"] },
+                    { name: "DroneCrop", subnodes: ["DroneCrop Watch™", "DroneCrop Sync™"] },
+                    { name: "CropTrace", subnodes: ["CropTrace Root™", "CropTrace Link™"] },
+                    { name: "PulseSoil", subnodes: ["PulseSoil Core™", "PulseSoil Signal™"] },
+                    { name: "SeedRoot", subnodes: ["SeedRoot Tag™", "SeedRoot Layer™"] },
+                    { name: "RuralFlow", subnodes: ["RuralFlow Map™", "RuralFlow Loop™", "RuralFlow Chain™"] },
+                    { name: "MarketGrow", subnodes: ["MarketGrow Pulse™", "MarketGrow Cast™", "MarketGrow Deals™"] },
+                    { name: "AgriRank", subnodes: ["AgriRank Score™", "AgriRank Matrix™"] },
+                    { name: "SoilLogic", subnodes: ["SoilLogic Grid™", "SoilLogic Forecast™"] },
+                    { name: "AgriSync", subnodes: ["AgriSync UI™", "AgriSync Chain™"] },
+                    { name: "NutrientGrid", subnodes: ["NutrientGrid Base™", "NutrientGrid Flux™"] },
+                    { name: "FieldCast", subnodes: ["FieldCast Audio™", "FieldCast Relay™"] },
+                    { name: "CropSource", subnodes: ["CropSource Ledger™", "CropSource ID™"] },
+                    { name: "YieldStack", subnodes: ["YieldStack UI™", "YieldStack Payout™", "YieldStack Index™"] },
+                    { name: "FarmPulse", subnodes: ["FarmPulse Loop™", "FarmPulse Mesh™"] },
+                    { name: "SoilTech", subnodes: ["SoilTech DNA™", "SoilTech Live™"] },
+                    { name: "GreenTrace", subnodes: ["GreenTrace Chain™", "GreenTrace Pulse™"] },
+                    { name: "CropVault", subnodes: ["CropVault Lock™", "CropVault Ledger™", "CropVault Cert™"] },
+                    { name: "AgriCast", subnodes: ["AgriCast Signal™", "AgriCast Feed™"] },
+                    { name: "TerraPulse", subnodes: ["TerraPulse Soil™", "TerraPulse Vault™"] },
+                    { name: "SoilTrace", subnodes: ["SoilTrace ID™", "SoilTrace Certify™"] },
                     { name: "PulseAg", subnodes: ["CropCyclePulse", "GrowthStageMonitor", "HarvestWindow"] },
-                    { name: "GrowVault", subnodes: ["PlantDataVault", "ResearchArchive", "GeneticLibrary"] },
-                    { name: "FieldNet", subnodes: ["FarmNetConnect", "DeviceSync", "RemoteMonitor"] },
-                    { name: "DroneSoil", subnodes: ["SoilSampleDrone", "ErosionMapping", "DrainageSurvey"] },
-                    { name: "SoilGrid", subnodes: ["SoilTypeMap", "PHGrid", "NutrientDensity"] },
-                    { name: "HarvestLoop", subnodes: ["PostHarvestProcess", "WasteReduction", "ValueAddLoop"] },
-                    { name: "RuralMesh", subnodes: ["RuralIoTNet", "ConnectivityHub", "SmartFarmMesh"] },
-                    { name: "FarmFlag", subnodes: ["FieldFlagging", "TaskAssign", "ProgressTrack"] },
-                    { name: "AgriFlow", subnodes: ["WorkflowOpt", "ProcessAutomate", "SupplyChainFlow"] },
-                    { name: "SoilVault", subnodes: ["SoilHealthRecord", "AnalysisLog", "RecommendationVault"] },
-                    { name: "FieldProof", subnodes: ["OriginVerify", "QualityProof", "CertTrace"] },
-                    { name: "GreenNode", subnodes: ["EcoNode", "CarbonSinkMonitor", "SustainableOps"] },
-                    { name: "RootVault", subnodes: ["RootHealthTrack", "DiseaseScan", "GrowthOptimizer"] },
-                    { name: "FieldToken", subnodes: ["LandToken", "YieldToken", "CarbonCreditToken"] },
-                    { name: "AgriPlan", subnodes: ["CropPlan", "BudgetPlan", "ResourceAllocate"] },
-                    { name: "EcoAg", subnodes: ["SustainableCert", "OrganicTrace", "WaterSmartAgri"] },
-                    { name: "HarvestNode", subnodes: ["HarvestDataCollect", "MachineSync", "PostHarvestOpt"] },
-                    { name: "TerraSoil", subnodes: ["SoilCompAnalysis", "DrainagePredict", "ErosionControl"] },
-                    { name: "CropMesh", subnodes: ["CropDiversity", "GeneticResource", "BioDiversityMap"] },
-                    { name: "AgriSignal", subnodes: ["MarketAlert", "YieldForecastSignal", "WeatherWarning"] },
-                    { name: "RuralCast", subnodes: ["RuralWeatherCast", "CommunityAlert", "FarmAdvisory"] },
-                    { name: "AgriSyncPro", subnodes: ["EnterpriseSync", "MultiFarmCoord", "GlobalOpsView"] },
-                    { name: "SoilLine", subnodes: ["SoilLayerMap", "DrainageLine", "ElevationModel"] },
-                    { name: "NutrientGrid", subnodes: ["NutrientMap", "FertilizerOpt", "DeficiencyAlert"] },
-                    { name: "CropSource", subnodes: ["SeedSourceTrack", "ChemicalSource", "OriginVerify"] },
-                    { name: "YieldStack", subnodes: ["YieldAggregate", "PerformanceStack", "PredictiveYield"] },
-                    { name: "FarmPulse", subnodes: ["RealtimeFarmData", "SensorPulse", "AlertSystem"] },
-                    { name: "SoilTech", subnodes: ["SmartSoilSensors", "AutomatedSoilAnalysis", "PrecisionNutrient"] },
-                    { name: "DroneGrid", subnodes: ["DroneRouteOpt", "AirspaceMonitor", "AutomatedFlight"] },
-                    { name: "MarketRoots", subnodes: ["RootCropMarket", "GlobalDemandRoot", "PricingRoots"] },
-                    { name: "NutrientPath", subnodes: ["NutrientDeliveryPath", "AbsorbtionTrack", "DeficiencyPath"] },
-                    { name: "CropPulse", subnodes: ["CropGrowthPulse", "HealthSignal", "StressDetect"] },
-                    { name: "AgriPulse", subnodes: ["FarmActivityPulse", "OperationalRhythm", "AgriMetricsStream"] },
-                    { name: "EcoSeed", subnodes: ["SustainableSeed", "OrganicSeed", "ClimateResilientSeed"] },
-                    { name: "AgriMetrics", subnodes: ["FarmKPIs", "YieldMetrics", "CostAnalysis"] },
-                    { name: "MarketLink", subnodes: ["BuyerSellerLink", "CommodityConnect", "DirectTrade"] },
-                    { name: "NutrientGrid", subnodes: ["NutrientMapping", "FertilizerOptimization", "DeficiencyAlert"] },
-                    { name: "PulseGrid", subnodes: ["RealtimeGrid", "DataFlowMonitor", "NetworkHealth"] },
-                    { name: "VaultMesh", subnodes: ["SecureDataMesh", "ImmutableRecords", "DecentralizedVault"] },
-                    { name: "ClaimRoot", subnodes: ["OriginClaim", "TimestampVerify", "LicenseTrack"] },
-                    { name: "OmniSignal", subnodes: ["GlobalVerification", "IntegrityCheck", "AssetProof"] },
-                    { name: "GhostTrace", subnodes: ["InteractionTrace", "ProvenanceLog", "AuditTrail"] },
-                    { name: "HSOMNI9000", subnodes: ["DiamondTier", "RoyaltyEnforcement", "AutoDeploy"] },
-                    { name: "Fruitful Global Planet", subnodes: ["GlobalEcoSystem", "SustainabilityInitiatives", "CommunityNetwork"] },
-                    { name: "VaultPay", subnodes: ["SecurePayments", "GlobalTransactions", "AutomatedRoyalties"] },
-                    { name: "TreatyCommerce", subnodes: ["EthicalTrade", "FairRoyalties", "SustainableMarket"] }
+                    { name: "GrowVault", subnodes: ["GrowVault Root™", "GrowVault Share™"] },
+                    { name: "FieldNet", subnodes: ["FieldNet Mesh™", "FieldNet Ping™"] },
+                    { name: "DroneSoil", subnodes: ["DroneSoil View™", "DroneSoil Trace™"] },
+                    { name: "SoilGrid", subnodes: ["SoilGrid X™", "SoilGrid Key™", "SoilGrid Base™"] },
+                    { name: "HarvestLoop", subnodes: ["HarvestLoop Yield™", "HarvestLoop Stack™"] },
+                    { name: "RuralMesh", subnodes: ["RuralMesh Net™", "RuralMesh Pulse™"] },
+                    { name: "FarmFlag", subnodes: ["FarmFlag Cert™", "FarmFlag Signal™"] },
+                    { name: "AgriFlow", subnodes: ["AgriFlow Path™", "AgriFlow Ledger™"] },
+                    { name: "SoilVault", subnodes: ["SoilVault Lock™", "SoilVault View™"] },
+                    { name: "FieldProof", subnodes: ["FieldProof Claim™", "FieldProof Relay™"] },
+                    { name: "DroneTrace", subnodes: ["DroneTrace Tag™", "DroneTrace Vault™"] },
+                    { name: "MarketRoots", subnodes: ["MarketRoots X™", "MarketRoots Grid™"] },
+                    { name: "NutrientPath", subnodes: ["NutrientPath Map™", "NutrientPath Scan™"] },
+                    { name: "CropPulse", subnodes: ["CropPulse Signal™", "CropPulse Ledger™"] },
+                    { name: "AgriPulse", subnodes: ["AgriPulse Loop™", "AgriPulse Ledger™"] },
+                    { name: "EcoSeed", subnodes: ["EcoSeed Vault™", "EcoSeed Sync™"] },
+                    { name: "AgriMetrics", subnodes: ["AgriMetrics Signal™", "AgriMetrics Vault™"] },
+                    { name: "DroneGrid", subnodes: ["DroneGrid Node™", "DroneGrid View™"] },
+                    { name: "GreenNode", subnodes: ["GreenNode Base™", "GreenNode Relay™"] },
+                    { name: "RootVault", subnodes: ["RootVault Claim™", "RootVault Transfer™"] },
+                    { name: "FieldToken", subnodes: ["FieldToken ID™", "FieldToken Pay™"] },
+                    { name: "AgriPlan", subnodes: ["AgriPlan Builder™", "AgriPlan Node™"] },
+                    { name: "SoilYield", subnodes: ["SoilYield Track™", "SoilYield Pulse™"] },
+                    { name: "SeedVault", subnodes: ["SeedVault ID™", "SeedVault Ledger™"] },
+                    { name: "MarketLink", subnodes: ["MarketLink Chain™", "MarketLink Signal™"] },
+                    { name: "CropFlow", subnodes: ["CropFlow Sync™", "CropFlow Vault™"] },
+                    { name: "RuralCast", subnodes: ["RuralCast Net™", "RuralCast Pulse™"] },
+                    { name: "AgriSyncPro", subnodes: ["AgriSyncPro UI™", "AgriSyncPro Lock™"] },
+                    { name: "SoilLine", subnodes: ["SoilLine Scan™", "SoilLine Pulse™"] },
+                    { name: "EcoAgri", subnodes: ["EcoAgri Cert™", "EcoAgri Grid™"] },
+                    { name: "HarvestNode", subnodes: ["HarvestNode Chain™", "HarvestNode Log™"] },
+                    { name: "TerraSoil", subnodes: ["TerraSoil View™", "TerraSoil DNA™"] },
+                    { name: "CropMesh", subnodes: ["CropMesh Grid™", "CropMesh Flow™"] },
+                    { name: "AgriSignal", subnodes: ["AgriSignal Node™", "AgriSignal Loop™"] },
+                    { name: "RuralVault", subnodes: ["RuralVault Lock™", "RuralVault Cert™"] },
+                    { name: "PulseGrow", subnodes: ["PulseGrow Timer™", "PulseGrow Sync™"] },
+                    { name: "MarketSoilX", subnodes: ["MarketSoilX Index™", "MarketSoilX Ledger™"] },
+                    { name: "AgriOmni", subnodes: ["AgriOmni Node™", "AgriOmni Relay™"] }
                 ]
             },
             // Other sectors from CodeNest dashboard for consistency in allSectorsData
@@ -1982,7 +1984,7 @@
                  newSubnodeMetrics.push({
                     type: 'Livestock Group', id: 'LVSTK-1', livestockType: document.getElementById('newFarmCrop').value,
                     count: Math.floor(Math.random() * 100 + 10), healthScore: Math.floor(Math.random() * 5 + 95),
-                    lastFeeding: `Automated`, dailyWeightGain: `${(Math.random() * 0.2 + 0.1).toFixed(1)} kg/day`,
+                    lastFeeding: `Automated`, dailyWeightGain: `${(Math.random() * 0.5 + 0.5).toFixed(1)} kg/day`,
                     notes: `Healthy new batch.`
                 });
             }
@@ -2216,23 +2218,24 @@
                     </div>
                     
                     <h4 class="text-lg font-semibold text-agri-text-light mb-2 mt-4">Brands & Subnodes:</h4>
-                    <div class="space-y-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         ${agricultureSector.brands.map(brand => `
                             <div class="border border-agri-border-color rounded-md p-3 bg-agri-bg-dark">
                                 <button class="toggle-section-btn flex justify-between items-center w-full text-left p-2 -mx-2 -my-2 rounded-md hover:bg-gray-700 transition-colors duration-200" onclick="window.toggleSection('agri-brand-${brand.name.replace(/ /g, '-')}')">
                                     <span class="text-agri-text-light font-medium">${brand.name}</span> <span><i class="fas fa-chevron-down"></i></span>
                                 </button>
                                 <div id="agri-brand-${brand.name.replace(/ /g, '-')}" class="repo-content-section hidden mt-2">
-                                    <div class="copy-square">
-                                        <button class="copy-button" onclick="window.copyToClipboard(this)">Copy</button>
-                                        <pre class="conversation-code-block">${agricultureSector.baseUrl}/sectors/${encodeURIComponent(brand.name.toLowerCase().replace(/ /g, '-'))}/index</pre>
-                                    </div>
+                                    <h5 class="text-agri-primary-color text-base font-semibold mb-2">Subnodes:</h5>
+                                    <ul class="list-disc list-inside ml-4 text-sm text-agri-text-light">
                                     ${brand.subnodes.map(subnode => `
-                                        <div class="copy-square ml-4 mt-2">
-                                            <button class="copy-button" onclick="window.copyToClipboard(this)">Copy</button>
-                                            <pre class="conversation-code-block">${agricultureSector.baseUrl}/sectors/${encodeURIComponent(brand.name.toLowerCase().replace(/ /g, '-'))}/${encodeURIComponent(subnode.toLowerCase().replace(/ /g, '-'))}/index</pre>
-                                        </div>
+                                        <li>
+                                            <div class="copy-square mt-2">
+                                                <button class="copy-button" onclick="window.copyToClipboard(this)">Copy</button>
+                                                <pre class="conversation-code-block">${agricultureSector.baseUrl}/sectors/${encodeURIComponent(brand.name.toLowerCase().replace(/ /g, '-'))}/${encodeURIComponent(subnode.toLowerCase().replace(/ /g, '-'))}/index</pre>
+                                            </div>
+                                        </li>
                                     `).join('')}
+                                    </ul>
                                 </div>
                             </div>
                         `).join('')}
@@ -2435,11 +2438,13 @@ ${[
             document.querySelectorAll('.settings-tab-btn').forEach(btn => {
                 // Remove existing active class styling
                 btn.classList.remove('active');
-                btn.classList.add('text-agri-text-light', 'hover:bg-agri-primary-color', 'hover:text-white', 'rounded-md', 'transition-all', 'duration-200');
+                // Ensure all buttons have the base styling before applying active/hover
+                btn.classList.add('px-4', 'py-2', 'text-agri-text-light', 'hover:bg-agri-primary-color', 'hover:text-white', 'rounded-md', 'transition-all', 'duration-200');
                 
                 if (btn.getAttribute('data-settings-tab') === tabId) {
                     btn.classList.add('active');
-                    btn.classList.remove('text-agri-text-light', 'hover:bg-agri-primary-color', 'hover:text-white'); // Remove hover styles for active tab
+                    // Remove hover styles for the active tab to prevent conflict
+                    btn.classList.remove('text-agri-text-light', 'hover:bg-agri-primary-color', 'hover:text-white'); 
                 }
             });
             // Re-render any dynamic content if needed for specific tabs
